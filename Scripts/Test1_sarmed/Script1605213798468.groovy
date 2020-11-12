@@ -15,3 +15,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+
+WebUI.openBrowser('https://qa.bento-tools.org/#/')
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Test_BentoDemo/Page_Bento/a_cases'))
+
+WebUI.click(findTestObject('Test_BentoDemo/Page_Bento/svg_Diagnosis_MuiSvgIcon-root'))
+
+WebUI.check(findTestObject('Test_BentoDemo/Page_Bento/div_Mucinous (colloid) Carcinoma(70)'))
+
+WebUI.verifyElementText(findTestObject('Test_BentoDemo/Page_Bento/div_70'), '70')
+
+WebUI.check(findTestObject('Test_BentoDemo/Page_Bento/td_Age (years)_MuiTableCell-root-9497 MuiTableCell-body-9499 jss9486 jss9488 MuiTableCell-paddingCheckbox-9502'))
+
+WebUI.click(findTestObject('Test_BentoDemo/Page_Bento/button_Add Selected Files'))
+
+WebUI.closeBrowser()
+
